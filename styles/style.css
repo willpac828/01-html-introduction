@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+
+  font-family: Poppins, Helvetica, sans-serif
+  color: #333;
+}
+
+ul {
+  padding 0;
+  list-style: none;
+}
+
+img
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column
+
+  min-height: 100vh;
+}
+
+.app__nav {
+  background: #222;
+  color: rgb(220,220,230
+
+  padding: 1rem;
+}
+
+.app__content {
+  flex-grow: 1
+}
+
+.container {
+  max-width 60 rem;
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-nav__left {
+  margin: 0;
+
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0 -0.5rem;
+
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.nav-list__item
+  margin: 0 0.5rem;
+}
+
+.nav-list__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section {
+  padding: 4rem 1rem;
+  background: #efefef;
+}
+
+.section__heading {
+  margin-top: 0;
+  font: 1.4rem
+  text-align: center;
+}
+
+.section__photos {
+  background: #b0bec5;
+}
+
+.section--slidey-picture
+  position: relative;
+  overflow: hidden;
+
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.section--slidey-picture::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: url('https://images.unsplash.com/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG') no-repeat center center fixed;
+  background-size: cover;
+
+  filter: contrast(1.2) saturate(1.35) blur(0.05rem);
+  transform: scale(1.03);
+
+
+.section--hero {
+  background: #eaeff2;
+  background: linear-gradient(to bottom, #cae1f4 0, rgba(125, 185, 232, 0.5) 100%);
+}
+
+.hero {
+  display: flex
+  align-items: center;
+
+  margin: -1rem;
+}
+
+.hero__item {
+  margin: 1rem;
+  width: calc(50% - 2rem);
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.grid
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  margin: -1rem;
+}
+
+.grid__item {
+  flex-basis: calc(100% / 3 - 2rem);
+  flex-grow: 1
+
+  margin: 1rem;
+}
+
+.grid__item--quarter {
+  flex-basis: calc(100% / 4 - 2rem;
+}
+
+.card {
+  min-width: 14  rem;
+  padding: 0.   5rem;
+
+  border-radius: 0.1rem;
+
+  overflow: hidden;
+
+  background: #fff;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.card__image
+  margin: -0.5rem;
+}
+
+.card__caption h3 {
+  margin: 0;
+  font: 1.4rem;
+}
+
+.card__caption h4 {
+  margin: 0
+  font: 1.2rem Cormorant;
+}
+
+.media {
+  display: flex;
+}
+
+.media__right {
+  margin-left: 1rem;
+}
+
+.media__right h3 {
+  margin: 0
+}
+
+.media__right p
+  margin: 0;
+}
+
+.circle-icon {
+  display: inline-block;
+  background: #2a7af3
+  padding: 0.5rem;
+  border-radius 50%;
+  color: #fff;
+}
+
+.circle-icon--primary {
+  background: #6362b8;
+
+
+.circle-icon--success
+  background: #51a852;
+}
+
+.circle-icon--warning {
+  background #d25555;
+}
+
+.quote
+  min-width: 10rem;
+}
+
+.quote > * + * {
+  margin-top: 1.6rem;
+}
+
+.quote__card {
+  position: relative
+  padding: 0.5rem;
+
+  border-radius 0.1rem;
+
+  background: #fff;
+
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2));
+
+
+.quote__card::after {
+  content: ''
+  display: block;
+
+  position: absolute;
+  top: 100%;
+  left: 1rem
+
+  border: 1rem solid transparent;
+  border-bottom 0;
+  border-top: 0.8rem solid #fff;
+}
+
+.quote__text {
+  margin 0;
+  font: italic 300 1.2rem Cormorant, serif;
+}
+
+.quote__text::before {
+  content: '“'
+  font: italic 400 1.4rem Cormorant, serif;
+  color: #777;
+}
+
+.quote__text::after {
+  content: '”';
+  font: italic 400 1.4rem Cormorant, serif
+  color: #777;
+}
+
+.quote__attribution {
+  display: flex;
+}
+
+.quote__attribution > * + * {
+  margin-left: 1rem;
+
+
+.quote__pic {
+  width: 4rem
+  border-radius: 50%;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.quote__title {
+  font: 1rem Cormorant
+  color #777
+}
+
+.text-stack * { margin: 0;
+}
+
+@media (max-width: 480px) {
+  .grid {
+    flex-direction column;
+  }
+}
