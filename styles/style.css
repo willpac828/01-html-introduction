@@ -41,7 +41,7 @@ figure {
 }
 
 .container {
-  max-width: 60 rem;
+  max-width: 60rem;
   margin: 0 auto;
 }
 
@@ -81,7 +81,7 @@ figure {
 
 .section__heading {
   margin-top: 0;
-  font: 1.4rem
+  font: 1.4rem;
   text-align: center;
 }
 
@@ -190,7 +190,7 @@ figure {
   margin-left: 1rem;
 }
 
- .media__right h3  {
+.media__right h3  {
   margin: 0;
 }
 
@@ -227,10 +227,10 @@ figure {
 }
 
 .quote__card {
-  position: relative
+  position: relative;
   padding: 0.5rem;
 
-  border-radius 0.1rem;
+  border-radius: 0.1rem;
 
   background: #fff;
 
@@ -252,7 +252,7 @@ figure {
 }
 
 .quote__text {
-  margin 0;
+  margin: 0;
   font: italic 300 1.2rem Cormorant, serif;
 }
 
@@ -284,14 +284,18 @@ figure {
 
 .quote__title {
   font: 1rem Cormorant;
-  color #777;
+  color: #777;
 }
 
-.text-stack *  { margin: 0;
+.text-stack   {
+  margin: 0;
 }
 
-@media (max-width: 480px) {
-  .grid {
-    flex-direction column;
+.media  {
+  max-width: 480px;
+}
+
+.grid {
+    flex-direction:column;
   }
 }
