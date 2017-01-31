@@ -291,11 +291,8 @@ figure {
   margin: 0;
 }
 
-.media  {
-  max-width: 480px;
-}
-
-.grid {
+@media (max-width: 480px) {
+  .grid {
     flex-direction:column;
   }
 }
