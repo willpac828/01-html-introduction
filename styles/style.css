@@ -287,8 +287,9 @@ figure {
   color: #777;
 }
 
-.text-stack   {
+.text-stack *  {
   margin: 0;
+
 }
 
 @media (max-width: 480px) {
